@@ -155,14 +155,14 @@ MonoBehaviour:
   colorCount: 6
   spacing: 3
   startY: 0
+  layerSpacing: 1.22
+  layerBottomOffset: -0.65
   pourMoveUp: 1
-  pourTiltAngle: 45
+  pourTiltAngle: 60
   pourDuration: 0.5
   levelConfig: {fileID: 11400000, guid: a5cf9495aef368f4e9ad8e71ac05ae79, type: 2}
   currentLevelIndex: 0
   isPouring: 0
-  layerSpacing: 1.22
-  layerBottomOffset: -0.65
 --- !u!4 &168168526
 Transform:
   m_ObjectHideFlags: 0

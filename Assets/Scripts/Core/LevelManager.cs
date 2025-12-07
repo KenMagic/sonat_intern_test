@@ -23,7 +23,7 @@ public class LevelManager : MonoBehaviour
 
     [Header("Pour Config")]
     public float pourMoveUp = 1.0f;
-    public float pourTiltAngle = 45f;
+    public float pourTiltAngle = 60f;
     public float pourDuration = 0.5f;
 
     [Header("Level config")]
@@ -336,7 +336,7 @@ public class LevelManager : MonoBehaviour
         Vector3 startPos = from.tubeTransform.position;
         Quaternion startRot = from.tubeTransform.rotation;
 
-        Vector3 targetPos = startPos + Vector3.up * pourMoveUp;
+        Vector3 targetPos = startPos + Vector3.up * pourMoveUp + new Vector3(2f, 0, 0);
         Quaternion targetRot = Quaternion.Euler(0, 0, pourTiltAngle);
 
         float halfDur = pourDuration / 2f;
